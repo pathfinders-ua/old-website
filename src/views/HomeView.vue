@@ -1,9 +1,13 @@
 <script setup lang="ts">
-import TheWelcome from '@/components/TheWelcome.vue'
+import CurrentPearl from '@/components/CurrentPearl.vue'
+import Quarters from '../components/Quarters.vue'
+import Header from '../components/Header.vue'
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+    <div>
+        <Header />
+        <CurrentPearl />
+        <Quarters />
+    </div>
 </template>
