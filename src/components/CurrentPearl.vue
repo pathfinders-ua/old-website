@@ -10,7 +10,7 @@ const quarter = Math.floor((store.today.getMonth() + 3) / 3)
 const week = getWeekNumber(store.today, quarter - 1)
 
 const pearl = {
-    week: { name: `Тиждень ${week}`, color: pearls.weeks.colors[week] },
+    week: { name: `Тиждень ${week}`, color: pearls.weeks.colors[week - 1] },
     quarter: { name: `Квартал ${quarter}`, color: pearls.quarters[quarter - 1].badge },
     title: 'Перлина тижня',
     text: pearls.quarters[quarter - 1].pearls[week - 1].text,
